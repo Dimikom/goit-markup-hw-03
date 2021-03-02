@@ -29,20 +29,50 @@ body {
 body a {
   text-decoration: none;
 }
+img {
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
 .link {
   text-decoration: none;
 }
 .list {
   list-style: none;
 }
+
 .address {
   font-style: normal;
 }
 .current {
 }
+/*общий вспомогательный класс 
+для центрирования и ограничения контента по ширине*/
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  outline: 1px solid tomato;
+}
 /*=========HEADER========*/
 .topline {
-  width: 1600px;
+  display: flex; /*располагает єлементы хедера в строку*/
+  align-items: center;
+  width: 1200px;
   height: 80px;
   left: 0px;
   top: 0px;
@@ -55,6 +85,9 @@ body a {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-right: 93px;
+  margin-left: 215px;
+  outline: 1px solid tomato;
 }
 .web {
   color: rgb(33, 150, 243);
@@ -62,9 +95,10 @@ body a {
 .menu-nav {
   color: var(--title-text-color);
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  outline: 1px solid tomato;
 }
 .menu-nav .link.current {
   color: var(--accent-color);
@@ -73,17 +107,33 @@ body a {
   color: var(--title-text-color);
 }
 .menu-nav li {
-  display: inline-block; /* Отображает меню как строчный элемент */
+  outline: 1px solid tomato;
+  display: inline-block; /*Отображает меню как строчный элемент */
+  font-size: 14px;
+  /*margin-right: 50px; задает отступ между студия-портфолио-конт 50пх*/
 }
+
+.mnav-item + .mnav-item {
+  margin-left: 50px; /* задает левый margin для меню нав кроме первого ли*/
+}
+/* menu-nav-item:not (:last-child) {
+  margin-right: 50px;} */
+
 .menu-nav a:hover,
 .menu-nav a:focus {
   color: var(--accent-color);
 }
+.header-mail-tel {
+  list-style: none;
+  display: flex;
+}
 .contact-email {
+  outline: 1px solid tomato;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  margin-right: 50px;
 }
 .contact-email a {
   color: var(--prime-text-color);
@@ -93,6 +143,7 @@ body a {
   color: var(--accent-color);
 }
 .contact-tel {
+  outline: 1px solid tomato;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
