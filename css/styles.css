@@ -21,12 +21,13 @@
   --border-color: #eeeeee;
   --logo-font: 'Raleway', sans-serif;
 }
+/* =======COMPONENTS======== */
 body {
   background-color: var(--primary-white-color);
   color: var(--prime-text-color);
   font-family: 'Roboto', sans-serif;
 }
-body a {
+a {
   text-decoration: none;
 }
 img {
@@ -46,6 +47,23 @@ ol {
   margin: 0;
   padding: 0;
 }
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+.address {
+  font-style: normal;
+}
+.current {
+}
+/* =======END OF COMPONENTS======== */
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6 IE7 */
@@ -56,38 +74,24 @@ ol {
   width: 1px !important;
   overflow: hidden;
 }
-
-.link {
-  text-decoration: none;
-}
-.list {
-  list-style: none;
-}
-
-.address {
-  font-style: normal;
-}
 .current {
 }
 /*общий вспомогательный класс 
 для центрирования и ограничения контента по ширине*/
 .container {
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   outline: 1px solid tomato;
 }
 /*=========HEADER========*/
 .topline {
-  display: flex; /*располагает єлементы хедера в строку*/
+  display: flex; /*располагает єлементы хедера в строку */
   align-items: center;
-  width: 1200px;
-  height: 80px;
-  left: 0px;
-  top: 0px;
   background-color: var(--primary-white-color);
+  border: 1px solid rgba(236, 236, 236, 1);
 }
 .webstudio {
   font-family: var(--logo-font);
@@ -97,18 +101,25 @@ ol {
   line-height: 1.19;
   letter-spacing: 0.03em;
   margin-right: 93px;
-  margin-left: 215px;
   outline: 1px solid tomato;
 }
 .web {
   color: rgb(33, 150, 243);
 }
+.navigation {
+  display: flex;
+  align-items: center;
+}
 .menu-nav {
+  display: flex;
+  align-items: center;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 0;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
   outline: 1px solid tomato;
 }
 .menu-nav .link.current {
@@ -137,9 +148,12 @@ ol {
 .header-mail-tel {
   list-style: none;
   display: flex;
+  margin-right: 50px;
+  margin-left: auto;
 }
 .contact-email {
   outline: 1px solid tomato;
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -155,6 +169,7 @@ ol {
 }
 .contact-tel {
   outline: 1px solid tomato;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -172,7 +187,18 @@ ol {
 .hero {
   background-color: var(--hero-footer-bground);
 }
+.hero > .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  outline: 1px solid tomato;
+}
 .hero-slogan {
+  display: flex;
+  align-items: center;
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
@@ -180,6 +206,9 @@ ol {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  outline: 1px solid tomato;
+
+  margin-bottom: 30px;
 }
 .hero-btn {
   font-family: inherit;
@@ -189,11 +218,16 @@ ol {
   font-size: 16px;
   line-height: 1.88;
   border-radius: 4px;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  display: block;
+  /* align-items: center; */
+  /* text-align: center; */
   letter-spacing: 0.06em;
+  min-width: 136px;
+  padding: 10px 32px;
+  /* margin: 0 auto; */
   cursor: pointer;
+  border: 0;
+  outline: 1px solid tomato;
 }
 .hero-btn:hover,
 .hero-btn:focus {
