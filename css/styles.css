@@ -56,8 +56,8 @@ ol {
 .address {
   font-style: normal;
 }
-.current {
-}
+/* .current {
+} */
 /* =======END OF COMPONENTS======== */
 
 .header .container {
@@ -73,8 +73,6 @@ ol {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
-}
-.current {
 }
 /*общий вспомогательный класс 
 для центрирования и ограничения контента по ширине*/
@@ -223,6 +221,18 @@ ol {
 }
 /*=========HERO END========*/
 /*======OUR SPECIATILY=====*/
+.our-spec .container {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.our-spec-list {
+  display: flex;
+  align-items: center;
+}
+.our-spec-item:not(:last-child) {
+  margin-right: 30px;
+}
 .our-spec-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -230,6 +240,7 @@ ol {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .our-spec-desc {
   color: var(--prime-text-color);
