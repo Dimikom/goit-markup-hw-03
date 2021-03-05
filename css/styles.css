@@ -87,21 +87,27 @@ ol {
   outline: 1px solid tomato;
 }
 /*=========HEADER========*/
+.page-header {
+  padding-top: 24px;
+  background-color: tomato;
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
 .topline {
   display: flex; /*располагает єлементы хедера в строку */
   align-items: center;
   background-color: var(--primary-white-color);
-  border: 1px solid rgba(236, 236, 236, 1);
+  /*он нужен?*/
 }
 .webstudio {
   font-family: var(--logo-font);
+  display: flex;
+  align-items: center;
   color: rgb(0, 0, 0, 1);
   font-weight: 400;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   margin-right: 93px;
-  outline: 1px solid tomato;
 }
 .web {
   color: rgb(33, 150, 243);
@@ -118,9 +124,6 @@ ol {
   font-size: 0;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  outline: 1px solid tomato;
 }
 .menu-nav .link.current {
   color: var(--accent-color);
@@ -129,7 +132,6 @@ ol {
   color: var(--title-text-color);
 }
 .menu-nav li {
-  outline: 1px solid tomato;
   display: inline-block; /*Отображает меню как строчный элемент */
   font-size: 14px;
   /*margin-right: 50px; задает отступ между студия-портфолио-конт 50пх*/
@@ -148,12 +150,13 @@ ol {
 .header-mail-tel {
   list-style: none;
   display: flex;
+  align-items: center;
   margin-right: 50px;
   margin-left: auto;
 }
 .contact-email {
-  outline: 1px solid tomato;
   display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -168,8 +171,6 @@ ol {
   color: var(--accent-color);
 }
 .contact-tel {
-  outline: 1px solid tomato;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -191,8 +192,9 @@ ol {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  /* padding-top: 200px;
+  padding-bottom: 200px; */
+  padding: 200px 452px 280px 452px;
 
   outline: 1px solid tomato;
 }
@@ -207,7 +209,6 @@ ol {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   outline: 1px solid tomato;
-
   margin-bottom: 30px;
 }
 .hero-btn {
@@ -219,15 +220,11 @@ ol {
   line-height: 1.88;
   border-radius: 4px;
   display: block;
-  /* align-items: center; */
-  /* text-align: center; */
   letter-spacing: 0.06em;
   min-width: 136px;
   padding: 10px 32px;
-  /* margin: 0 auto; */
   cursor: pointer;
   border: 0;
-  outline: 1px solid tomato;
 }
 .hero-btn:hover,
 .hero-btn:focus {
