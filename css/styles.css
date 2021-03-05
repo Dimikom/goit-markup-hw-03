@@ -89,6 +89,7 @@ ol {
 /*=========HEADER========*/
 .page-header {
   padding-top: 24px;
+  padding-bottom: 24px;
   background-color: tomato;
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
@@ -187,6 +188,7 @@ ol {
 /*==========HERO===========*/
 .hero {
   background-color: var(--hero-footer-bground);
+  text-align: center;
 }
 .hero > .container {
   display: flex;
@@ -195,21 +197,19 @@ ol {
   /* padding-top: 200px;
   padding-bottom: 200px; */
   padding: 200px 452px 280px 452px;
-
   outline: 1px solid tomato;
 }
 .hero-slogan {
-  display: flex;
-  align-items: center;
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   outline: 1px solid tomato;
   margin-bottom: 30px;
+  padding-left: 252px;
+  padding-right: 252px;
 }
 .hero-btn {
   font-family: inherit;
