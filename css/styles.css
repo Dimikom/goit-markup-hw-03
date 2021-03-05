@@ -84,20 +84,18 @@ ol {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid tomato;
+  outline: 2px solid orange;
 }
 /*=========HEADER========*/
 .page-header {
   padding-top: 24px;
   padding-bottom: 24px;
-  background-color: tomato;
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 .topline {
   display: flex; /*располагает єлементы хедера в строку */
   align-items: center;
   background-color: var(--primary-white-color);
-  /*он нужен?*/
 }
 .webstudio {
   font-family: var(--logo-font);
@@ -141,9 +139,6 @@ ol {
 .mnav-item + .mnav-item {
   margin-left: 50px; /* задает левый margin для меню нав кроме первого ли*/
 }
-/* menu-nav-item:not (:last-child) {
-  margin-right: 50px;} */
-
 .menu-nav a:hover,
 .menu-nav a:focus {
   color: var(--accent-color);
@@ -152,7 +147,6 @@ ol {
   list-style: none;
   display: flex;
   align-items: center;
-  margin-right: 50px;
   margin-left: auto;
 }
 .contact-email {
@@ -189,15 +183,13 @@ ol {
 .hero {
   background-color: var(--hero-footer-bground);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
-.hero > .container {
+.hero .container {
   display: flex;
   align-items: center;
   flex-direction: column;
-  /* padding-top: 200px;
-  padding-bottom: 200px; */
-  padding: 200px 452px 280px 452px;
-  outline: 1px solid tomato;
 }
 .hero-slogan {
   color: var(--primary-white-color);
@@ -206,7 +198,6 @@ ol {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  outline: 1px solid tomato;
   margin-bottom: 30px;
   padding-left: 252px;
   padding-right: 252px;
