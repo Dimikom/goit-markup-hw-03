@@ -251,6 +251,10 @@ ol {
 }
 /*====OUR SPECIATILY END===*/
 /*=====OUR ACTIVITIES======*/
+.our-activities .container {
+  display: flex;
+  padding-bottom: 94px;
+}
 .our-activities-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -258,25 +262,47 @@ ol {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.our-activities-list {
+  display: flex;
+  padding-bottom: 94px;
 }
 .our-activities-item {
   display: inline-block;
+}
+.our-activities-item:not(:last-child) {
+  margin-right: 30px;
 }
 /*===OUR ACTIVITIES END====*/
 /*=========OUR TEAM========*/
 .our-team {
   background: var(--team-section-bground);
+  padding-top: 94px;
+  padding-bottom: 94px;
+  outline: 2px solid green;
 }
 .our-team-title {
+  /* display: flex;
+  align-content: center; */
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+/*ЗАКОНЧИЛ ТУТ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1*/
+.our-team-list {
+  /* outline: 1px solid tomato; */
+  display: flex;
+}
+.our-team-item:not(:last-child) {
+  margin-right: 30px;
 }
 .our-team-item {
-  display: inline-block;
+  display: block;
 }
 .team-member-name {
   color: var(--title-text-color);
