@@ -8,6 +8,7 @@
 /*цвет шрифта в адресе футера*/
 /*Цвет бордера на карточке в Портфолио*/
 /*Шрифт логотипа WebStudio - Raleway*/
+/*Внутренний отступ в секциях 94рх*/
 
 :root {
   --title-text-color: #212121;
@@ -20,6 +21,7 @@
   --footer-adr-color: rgba(255, 255, 255, 0.6);
   --border-color: #eeeeee;
   --logo-font: 'Raleway', sans-serif;
+  --section-inner-padding: 94px;
 }
 /* =======COMPONENTS======== */
 body {
@@ -32,6 +34,8 @@ a {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 h1,
 h2,
@@ -223,8 +227,8 @@ ol {
 /*======OUR SPECIATILY=====*/
 .our-spec .container {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: var(--section-inner-padding);
+  padding-bottom: var(--section-inner-padding);
 }
 .our-spec-list {
   display: flex;
@@ -253,7 +257,7 @@ ol {
 /*=====OUR ACTIVITIES======*/
 .our-activities .container {
   display: flex;
-  padding-bottom: 94px;
+  padding-bottom: var(--section-inner-padding);
 }
 .our-activities-title {
   color: var(--title-text-color);
@@ -266,7 +270,7 @@ ol {
 }
 .our-activities-list {
   display: flex;
-  padding-bottom: 94px;
+  padding-bottom: var(--section-inner-padding);
 }
 .our-activities-item {
   display: inline-block;
@@ -278,13 +282,10 @@ ol {
 /*=========OUR TEAM========*/
 .our-team {
   background: var(--team-section-bground);
-  padding-top: 94px;
-  padding-bottom: 94px;
-  outline: 2px solid green;
+  padding-top: var(--section-inner-padding);
+  padding-bottom: var(--section-inner-padding);
 }
 .our-team-title {
-  /* display: flex;
-  align-content: center; */
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -293,9 +294,7 @@ ol {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
-/*ЗАКОНЧИЛ ТУТ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1*/
 .our-team-list {
-  /* outline: 1px solid tomato; */
   display: flex;
 }
 .our-team-item:not(:last-child) {
@@ -303,6 +302,14 @@ ol {
 }
 .our-team-item {
   display: block;
+}
+
+.team-name-container {
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 0 0 5px 5px;
+  background-color: var(--primary-white-color);
 }
 .team-member-name {
   color: var(--title-text-color);
@@ -319,6 +326,7 @@ ol {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 10px;
 }
 /*=======OUR TEAM END======*/
 /*=======FOOTER============*/
