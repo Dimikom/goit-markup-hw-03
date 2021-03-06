@@ -133,13 +133,11 @@ ol {
   color: var(--title-text-color);
 }
 .menu-nav li {
-  display: inline-block; /*Отображает меню как строчный элемент */
+  display: inline-block;
   font-size: 14px;
-  /*margin-right: 50px; задает отступ между студия-портфолио-конт 50пх*/
 }
-
 .mnav-item + .mnav-item {
-  margin-left: 50px; /* задает левый margin для меню нав кроме первого ли*/
+  margin-left: 50px;
 }
 .menu-nav a:hover,
 .menu-nav a:focus {
@@ -303,7 +301,6 @@ ol {
 .our-team-item {
   display: block;
 }
-
 .team-name-container {
   margin: 0 auto;
   padding-top: 30px;
@@ -330,8 +327,10 @@ ol {
 }
 /*=======OUR TEAM END======*/
 /*=======FOOTER============*/
-.site-bottom {
+.footer {
   background: var(--hero-footer-bground);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .bottom-webstudio {
   color: var(--primary-white-color);
@@ -343,6 +342,10 @@ ol {
 }
 .address-box {
   font-style: normal;
+  margin-top: 20px;
+}
+.address-box-list:not(:last-child) {
+  margin-bottom: 9px;
 }
 .address-line {
   color: var(--primary-white-color);
